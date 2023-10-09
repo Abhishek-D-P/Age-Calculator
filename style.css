@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+:root{
+    --screen-height:1000px;
+    --screen-width:1000px;
+}
+
+
+
+body{
+    background-color: #bd83b8;
+    color: white;
+    font-family: 'Kalam';
+}
+
+.container{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10%; 
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:8px 8px black;
+    background-color: #473e66;
+
+}
+
+#currdate{
+    font-family:'Roboto Slab';
+    text-align: center;
+    font-size: 40px;
+}
+
+p{
+    text-align: center;
+}
+
+input{
+    width: 50%;
+    margin: auto;
+    margin-bottom:5%;
+    font-size: 1.5em;
+    border-radius: 10px;
+    font-family: 'Robot Slab';
+    padding: 15px;
+    text-align: center;
+}
+
+
+button:hover{
+    background-color: #f1916d;
+    color: #fff;
+}
+button{
+    margin: auto;
+    
+    width: 50%;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    font-weight: 1000;
+    padding: 5px;
+    
+    font-family: 'Robot Slab';
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    background-color: #f1916d;
+    position: absolute;
+    top:0vh;
+    left: 0;
+    margin: auto;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+    box-shadow: 5px 5px white;
+    font-size: 1.5em;
+    font-weight: 600;
+    visibility: hidden;
+}   
+
+@media only screen and (max-width:600px){
+    .container{
+        
+        width: 80%;
+        margin-left: 10vw;
+        margin-top: 40%;
+        
+    }
+
+    input{
+        font-size: 1em ;
+    }
+
+    button{
+        font-size: 1em;
+    }
+
+    .result{
+        width: 80%;
+        margin-left: 10vw;
+        margin-top: 35%;  
+    }
+}
+
